@@ -1,19 +1,18 @@
 def convert(number):
-    x = input("x?")
-    if x%3==0:
-        print("Pling")
-    elif x%5==0:
-        print("Plang")
-    elif x%7==0:
-        print("Plong")
-    elif x%3==0 and x%5==0:
-        print("PlingPlang")
-    elif x%3==0 and x%7==0:
-        print("PlingPlong")
-    elif x%5==0 and x%7==0:
-        print("PlangPlong")
-    elif x%3==0 and x%5==0 and x%7==0:
-        print("PlingPlangPlong")
-    elif x%3!=0 and x%5!=0 and x%7!=0:
-        print(x)
-    pass
+   if(number%3==0 and number%5==0 and number%7==0):
+       return'PlingPlangPlong'
+   elif(number%3==0 and number%5==0):
+       return"PlingPlang" 
+   elif(number%3==0 and number%7==0):
+       return'PlingPlong'
+   elif(number%5==0 and number%7==0):
+       return'PlangPlong'           
+   elif(number%3==0):
+       return'Pling'
+   elif(number%5==0):
+       return'Plang'
+   elif(number%7==0):
+       return'Plong'
+   else:
+       return str(number) 
+    
