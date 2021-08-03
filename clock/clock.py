@@ -14,5 +14,5 @@ class Clock:
    def __add__(self, minute):
         return Clock(self.hour, self.minute+minute)
 
-   def __sub__(self, minutes):
+   def __sub__(self, minute):
         return Clock(self.hour, self.minute-minute)
