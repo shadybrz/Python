@@ -8,11 +8,11 @@ class Clock:
    def __repr__(self):
         return "%02d:%02d"%(self.hour,self.minute)
 
-   def __eq__(self, other):
-        return self.hour == other.hour and self.minute == other.minute
+   def __eq__(self, time):
+        return self.hour == time.hour and self.minute == time.minute
 
-   def __add__(self, minutes):
-        return Clock(self.hour, self.minute+minutes)
+   def __add__(self, minute):
+        return Clock(self.hour, self.minute+minute)
 
    def __sub__(self, minutes):
-        return Clock(self.hour, self.minute-minutes)
+        return Clock(self.hour, self.minute-minute)
